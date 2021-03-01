@@ -1,0 +1,67 @@
+h1
+{
+	width: 1020px;
+	width: 50%;
+	margin:0 auto;
+	background-color: rgba(32,32,32);
+	color: white;
+	text-align:center;
+}
+
+
+body
+{
+	margin-top: 100px;
+	font-family: 'Yu Gothic Medium', Calibri, serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+	background-image: url(media/programmation.png);
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+#carte
+
+{
+
+width: 1020px;
+width: 50%;
+margin:0 auto;
+background-color: rgba(32,32,32);
+text-align: left;
+align-content: center;
+
+
+}
+
+div.IMAGE {
+		text-align: center;
+}
+
+div.Warning {
+		float: left;
+		width: 800px;
+}
+div.element{
+		text-align: center;
+}
+div.infobulle{
+		transform:scale(0);
+		text-align: center;
+		
+}
+div.element:hover > .infobulle{
+		transform:scale(1);
+}
+div.MERCI{
+	text-align:center;
+}
+
+a:link{
+		color:white;
+}
+
+a:visited{
+	color:white;
+}

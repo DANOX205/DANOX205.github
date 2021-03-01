@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> LE MODULE TURTLE </title>
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+		<div id="carte">
+		<h1><i><u>LE MODULE TURTLE.</u></i></h1>
+
+<p><i><u>Consigne:</u> créer une page HTML en lien avec la NSI niveau première.</i><p>
+
+<p>Tout d'abord, Bienvenue sur mon site web qui a pour but de traiter du module Turtle sur python.<p>
+<p>Le module Turtle permet de créer des logos, figures, formes géométriques... etc à partir du codage sur python.<p>
+<p>Ce module est souvent utilisé pour apprendre la codage aux débutants car il est facile et peut donner des résultats magnifiques!!!<p>
+<div class="IMAGE">
+<img src="media/spirale.png" width="250">
+</div>
+
+
+<h2><u>POURQUOI J'AI CHOISI CE THEME ?</u></h2>
+
+<p>J'ai choisi le module Turtle car c'est une séquence que j'ai vraiment aimé.<p>
+<p>En effet, j'adore le dessin et créer des jeux-vidéos et je pense que Turtle est un beau mélange de ces deux passions.<p>
+<p>Turtle offre la possibilité de réfléchir et de coder, il faut aussi bien savoir se repérer dans l'espace pour avoir un bon résultat.<p>
+<p>Avec le module Turtle, j'ai fais l'expérience que le meilleur ami du codeur est le brouillon.<p>
+<p>Sans brouillon, il est impossible de se repérer.<p>
+<p>J'ai également apprécié les projets que l'on a menés en classe. A la fin de chaque figure, j'étais fier de mes résultats.<p>
+<p>L'accessibilité du module Turtle est aussi un gros avantage car il est simple à prendre en main et est parfait pour débuter en programmation.<p>
+<p>A ce sujet, voici l'objectif de cette page web, donner envie de faire découvrir le monde de l'informatique et de la programmation<p>
+<p>Voici certains projets que j'ai réalisé<p>
+<div class="IMAGE">
+<img src="media/figure33.png" >
+</div>
+<div class="IMAGE">
+<img src="media/Flocons.png" width="500">
+</div>
+
+
+<h3><u>SOMMAIRE</u></h3>
+<p><ul>
+<li><a href="#histoire"><b>UN PEU D'HISTOIRE.</b></a> <br>
+<li><a href="#début"><b>POUR BIEN DEBUTER SUR LE MODULE TURTLE.</b></a><br>
+<li><a href="#bases"><b>LES BASES.</b></a><br>
+<li><a href="#paramètres"><b>MODIFIER LES PARAMETRES DE LA FENETRE ET DU STYLO.</b></a><br>
+<li><a href="#commandes"><b>LES COMMANDES TURTLE.</b></a><br>
+<li><a href="#exercices"><b>EXERCICES.</b></a><br>
+<li><a href="#conclusion"><b>CONCLUSION.</b></a><br>
+<p></ul>
+
+
+<h2 class="Sh2"><a class="an" name="histoire"><u>UN PEU D'HISTOIRE.</u></a></h2>
+<p>Le module turtle a été crée en 1967 par Wally Feurzig et Seymout Papert, créateurs du langage de programmation Logo. Le module Turtle est accessible sur python depuis la version 2.5 sortie en 2006.<p>
+<p>Aujourd'hui, Le module Turtle est principalement utilisé sur Python. <p>
+<p>Le module Turtle utilise le langage python.<p>
+<p>Pour obtenir le module Turtle, il faut installer pyzo ou l'éditeur Thonny : <p>
+<a href="https://thonny.org/"><p>L'éditeur Thonny<p></a>
+<a href="https://pyzo.org/start.html"><p>Pyzo<p></a>
+
+
+<h2 class="Sh2"><a class="an" name="début"><u>POUR BIEN DEBUTER SUR LE MODULE TURTLE.</u></a></h2>
+<p><strong>Présentation de l'interface.</strong><p>
+<p>Pour ce tutoriel, nous utiliserons l'interface de pyzo<p>
+<div class="IMAGE">
+<img src="media/interface_python.png" width="800">
+</div>
+<p>Les instructions en rouge sont les boutons principaux du logiciel.<p>
+<p>Grâce à eux, on peut: créer, sauvegarder, tester et effacer/réinitialiser la console<p>
+<p>Ensuite, il y a les deux parties principales : L'EDITEUR et LA CONSOLE <p>
+	<ol>
+<li><p> <strong><u>L'EDITEUR:</strong></u><p>
+<p>Il est souvent appelé IDLE (environnement de développement intégré), c'est ici qu'on va commencer à programmer.  Certaines fonctionnalités permettent de compléter automatiquement le code ou de détecter des erreurs de syntaxe dans un code et de proposition de modification. <p></li>
+<li><p> <strong><u>LA CONSOLE:</strong></u><p>
+<p> La console montre les erreurs produites dans un programme. il indique le type d'erreur et la ligne où l'erreur a été faite. On peut exécuter des SHELL(des mini-programmes) dans la console. Il est également possible de retrouver des anciennes commandes rentrées grâce aux flèches HAUT et BAS.<p></li>
+</ol>
+
+
+<h2 class="Sh2"><a class="an" name="bases"><u>LES BASES.</u></a></h2>
+<p> Tout d'abord, il faut importer la bibliothèque Turtle grâce à la commande<strong> from turtle import*</strong>, maintenant, vous avez accès aux fonctionnalités du module Turtle.<p>
+<p>En premier lieu , il faut imaginer la tortue comme étant un pinceau. Votre pinceau débute à l'emplacement (0;0), il est au centre de la toile. Il est très important de connaître l'emplacement et la rotation de votre stylo pour ne pas se perdre, c'est la clé de la réussite.<p>
+<p> Commençons par quelque chose de simple: On veut créer un carré. <p>
+<div class="IMAGE">
+	<img src="media/carré.png" width="700">
+	</div>
+	<div class="IMAGE">
+	<img src="media/standard.png" width="600">
+	</div>
+<p> Voici les commandes que nous allons utiliser pour réaliser ce carré :<p>
+<ul>
+<li><p>La commande <strong>forward(distance)</strong> permet d'avancer le stylo de la valeur distance.<p>
+<li><p>La commande <strong>left(angle)</strong> et <strong>right(angle)</strong> permet de changer l'angle(en degrés) du stylo vers la gauche ou la droite. <p>
+<li><p>La commande <strong>for i in range(n):</strong> permet de répéter des actions un nombre n de fois.<p>
+	</ul>
+<p>Maintenant, il faut avancer le stylo de 50, tourner de 90° vers la gauche et répéter l'action 4 fois.<p>
+<p><div class="Warning"><img src="media/Warning_sign.png" width="30"></div><strong> Par défaut, nous sommes en mode standard, le stylo est positionné vers la droite. </strong><p>
+<div class="IMAGE">
+	<img src="media/exemple1.png" width="800">
+	</div>
+<P><i>BRAVO! </i> Vous venez de réaliser votre première figure sur le module Turtle.<p>
+<p>Maintenant, nous allons recréer ce carré mais d'une manière totalement différente pour bien comprendre le fonctionnement des positions. <p>
+<div class="IMAGE">
+	<img src="media/carré.png" width="700">
+	</div>
+<p> Voici certaines commandes pour apprendre à se positionner:<p>
+<ul>
+<li><p>La commande <strong>setx(x)</strong> permet d'amener le stylo à une abscisse x. <p>
+<li><p>La commande <strong>sety(y):</strong> permet d'amener le stylo à une ordonnée y.<p>
+<li><p>La commande <strong>goto(x,y)</strong> permet d'amener le stylo à des coordonnées x/y.<p>
+		<p>Dans cet exemple, nous allons dessiner le carré avec des goto. Souvenons-nous que le point de départ est (0,0) et que le goto(x,y) amène à la destination (x,y) en traçant un trait.<p>
+	</ul>
+	<div class="IMAGE">
+	<img src="media/exemple2.png" width="800">
+	</div>
+<p> Maintenant, vous savez vous positionner. Cependant, voici une liste de commandes pour positionner le stylo :<p>
+<ul>
+<li><p>La commande <strong>setposition(x,y)</strong> permet d'amener le stylo à une position x/y.<p>
+<li><p>La commande <strong>setheading(angle)</strong> oriente le stylo a un angle définie. <p>
+<li><p>La commande <strong>undo()</strong> annule le dernier tracé.<p>
+	</ul>
+
+
+<h2 class="Sh2"><a class="an" name="paramètres"><u>MODIFIER LES PARAMETRES DE LA FENETRE ET DU STYLO.</u></a></h2>
+<p> Voici un tableau pour vous aider sur les paramètres de vos fenêtres et votre stylo: <p>
+	<center>
+		<table border="4" cellspacing="1" cellpadding="1" width="50%" text-align:center>
+			<tr>
+ <th>Commandes paramètres de la fenêtre.</th>
+ <th>Commandes paramètres de votre stylo.</th>
+ </tr>
+ <tr>
+ <td><strong>title(t)</strong> fixe le titre de la fenêtre</td>
+ <td><strong>penup()</strong> lève le stylo(aucun tracé)</td>
+ </tr>
+<tr>
+ <td><strong>screensize(l,h,couleur)</strong> dimensions de la fenêtre et couleur de fond</td>
+ <td><strong>pendown()</strong> baisse le stylo(trace)</td>
+ </tr>
+ <tr>
+ <td><strong>setup(...)</strong> fixe la position et la dimension de la fenêtre</td>
+ <td><strong>color()</strong> fixe la couleur du stylo et d'un remplissage</td>
+ </tr>
+ <tr>
+ <td><strong>window_width()</strong> et <strong>window_height()</strong> pour la largeur et la hauteur de la fenêtre</td>
+ <td><strong>width(n)</strong> change l'épaisseur du trait du stylo</td>
+ </tr>
+ <tr>
+ <td><strong>speed(n)</strong> change la vitesse du stylo avec une valeur n</td>
+ <td><strong>end()</strong> et <strong>bye()</strong> libère et ferme la fenêtre de la tortue</td>
+ </tr>
+
+ </table>
+ </center>
+ 
+ 
+ <h2 class="Sh2"><a class="an" name="commandes"><u>LES COMMANDES TURTLE.</u></a></h2>
+<p> A partir du lien sur l'image, vous aurez accès à une grande liste pour vous aider sur les commandes Turtle. N'hésitez pas à les apprendre !!!<p>
+ <a href="file:///D:/T%C3%A9l%C3%A9chargement/turtleref%20(6).pdf" target="_blank">
+ <div class="IMAGE">
+ 	<img src="media/python.png" alt="Aide Mémoire Turtle" width="400">
+	</div>
+</a>
+<p> Voici un sommaire des commandes les plus importantes.
+<ol>
+<li>Position & Déplacements:
+<ul><li>	forward(distance): Avance le stylo de la distance entrée.</li>
+	<li>	backward(distance): Recule le stylo de la distance entrée.</li>
+	<li>	right(angle): Tourne l'angle de le stylo d'un angle donné vers la droite.</li>
+	<li>	left(angle): Tourne l'angle de le stylo d'un angle donné vers la gauche.</li>
+	<li>	setposition(x,y)/ goto(x,y): Amène le stylo à aux coordonnées x/y entrées.</li>
+	<li>	setheading(angle): Tourne le stylo dans un angle bien spécifique.</li>
+	<li>	circle(rayon,angle): Construit un cercle à partir du rayon et de l'angle.(rayon positif= vers la gauche/rayon négatif= vers la droite)</li>
+</ul>
+<li>Pinceau:
+<ul><li>	penup()/up(): Lève le stylo (le stylo ne trace pas).</li>
+	<li>	pendown()/down(): Baisse le stylo (le stylo trace).</li>
+	<li>	pencolor(couleur)/color(couleur): Change la couleur du stylo.</li>
+	<li>	fillcolor(couleur): Fixe une couleur à un remplissage.</li>
+	<li>	begin_fill(): Débuter un remplissage.</li>
+	<li>	end_fill(): Finir un remplissage.</li>
+	<li>	colormode(r,g,b): Permet d'avoir beaucoup de variations de couleurs en changeant les valeurs R G B, valeur de 0 à 255.</li>
+</ul>
+<li>Contrôles:
+<ul><li>	speed(n): Change la vitesse du stylo.</li>
+	<li>	hideturtle(): Cache l'icône du stylo.</li>
+	<li>	showturtle(): Affiche l'icône du stylo.</li>
+	<li>	shape(nom): Change la forme du stylo("arrow","turtle","circle","square","triangle","classic").</li>
+	<li>	clearscreen/clear(): Enlève les traces de la tortue.</li>
+</li>
+
+</ol>	
+	
+	
+	<h2 class="Sh2"><a class="an" name="exercices"><u>EXERCICES.</u></a></h2>
+	<p><u>exercice 1: L'hexagone.</u><p>
+		<p>On va essayer de construire un <strong>HEXAGONE.</strong><p>
+		<p>Tout d'abord, il faut connaître le représenter sur une feuille.<p>
+		<div class="IMAGE">
+	<img src="media/Hexagone.png" width="800">
+	</div>
+	<p>Comme on peut le remarquer, le stylo(flèche rouge), commence avec un angle de 0°. Il faudra y faire attention et le prendre en compte.<p>
+	<p> Voici un tableau des commandes à utiliser:<p>
+	<center>
+		<table border="4" cellspacing="1" cellpadding="1" width="50%" text-align:center>
+	<tr>
+	<th>Commandes.</th>
+	<th>Utilité.</th>
+	</tr>
+	<tr>
+	<td><strong>left(angle)</strong></td>
+	<td>change l'angle du stylo.</td>
+	</tr>
+	<tr>
+	<td><strong>forward(distance)</strong></td>
+	<td>avance le stylo.</td>
+	</tr>
+	<tr>
+	<td><strong>for i in range(n)</strong></td>
+	<td>repète l'action un nombre n de fois.</td>
+	</tr>
+	</table>
+	</center>
+	<p>N'oubliez pas d'importer la bibliothèque Turtle grâce à la commande<strong> from turtle import*</strong>.<p>
+	
+	<div class="element">
+		CORRECTION
+		<div class="infobulle">
+	<img src="media/correction1.png" width="800"></div>
+	</div>
+	
+	<p><u>exercice 2: Une enveloppe.</u><p>
+			<p>On va essayer de construire une <strong>ENVELOPPE.</strong><p>
+		<p>Tout d'abord, on représente la figure sur une feuille.<p>
+		<div class="IMAGE">
+	<img src="media/Enveloppe.png" width="800">
+	</div>
+	<p>Les commandes pour réaliser cette figure sont les mêmes que l'exercice précèdent.<p>
+	<p>Dans le schéma, les longueurs B et C y sont représentées. Pour trouver leur valeur, il faut faire le théorème de pythagore: A²=B²+C² sachant que C=B.<p>
+	<p>Il faut aussi importer une nouvelle bibliothèque <strong>from math import*</strong>pour avoir accès à la racine carré.<strong>sqrt(n)</strong><p>
+	
+	<div class="element">
+		CORRECTION
+		<div class="infobulle">
+	<img src="media/correction2.png" width="800"></div>
+	</div>
+	
+	<p><u>exercice 3: Une étoile.</u><p>
+	<p>On va essayer de construire une <strong>ETOILE</strong> à  5 branches avec des couleurs et une taille qui changent selon les valeurs rentrées.<p>
+	<p>Pour cela, on va créer une fonction où l'on va déterminer la taille et la couleur de notre étoile.<p>
+	<p>Pour créer cette fonction, il faut faire <strong>def etoile(taille,couleur):</strong>
+		<p>On représente la figure sur une feuille.<p>
+		<div class="IMAGE">
+		<img src="media/étoile.png" width="800">
+		</div>
+		<p>Les commandes à utiliser:<p>
+		<p>
+		<ul><li>color(à compléter)</li>
+		<li>for i in range(à compléter)</li>
+		<li>forward(à compléter)</li>
+		<li>right(144)</li></ul><p>
+		<p>Pour faire fonctionner le programme, il faudra entrer dans la console <strong>etoile(taille,'couleur'):</strong> puis changer la valeur <strong>taille</strong> et la <strong>'couleur'</strong> pour obtenir des résultats différents.<p>
+	
+	<div class="element">
+		CORRECTION
+		<div class="infobulle">
+	<img src="media/correction3.png" width="800"></div>
+	</div>
+	
+	<p><u>exercice 4: Yin et Yang.</u><p>
+	<p>On va essayer de construire le symbole du <strong>YIN</strong> et du <strong>YANG.</strong><p>
+	<p>Celui-ci est un peu plus complexe. Pour réaliser la figure, il faut la séparer en plusieurs étapes:<p>
+	<p>on représente la figure sur une feuille<p>
+	<div class="IMAGE">
+		<img src="media/YIN et YANG.png" width="800">
+		</div>
+		<ol>
+		<li>Tout d'abord, il faut construire le demi-cercle rouge. Il faut repositionner le stylo vers la gauche grâce à la commande <strong>setheading(angle)</strong>, puis on commence un remplissage <strong>begin_fill()</strong>, enfin on trace le demi-cercle rouge <strong>circle(rayon,angle).</strong></li>
+		<li>Ensuite, on trace les demis-cercles vert et orange <strong>circle(rayon,angle).</strong>On termine le remplissage <strong>end_fill().</strong></li>
+		<li>On trace le demi-cercle bleu <strong>circle(rayon,angle).</strong></li>
+		<li>Et pour finir, on déplace le stylo <strong>goto(x,y)</strong> vers les petits cercles complets. Il faut utiliser l'option remplissage <strong>begin_fill()</strong>/<strong>end_fill().</strong> et changer la couleur du stylo pour chaque cercle.<p>
+		<p>ATTENTION à lever le stylo <strong>penup()</strong> pour la dernière étape<p>
+		
+		<div class="element">
+		CORRECTION
+		<div class="infobulle">
+	<img src="media/correction4.png" width="800"></div>
+	</div>
+		
+	<p><u>exercice 5: La spirale.</u><p>
+	<p>On va essayer de construire <strong>UNE SPIRALE.</strong><p>
+	<div class="IMAGE">
+		<img src="media/spirale2.png" width="800">
+		</div>
+		<p><u>AIDE:</u>une spirale est un enchaînement de demi-cercles<p>
+		<div class="element">
+		CORRECTION
+		<div class="infobulle">
+	<img src="media/correction5.png" width="800"></div>
+	</div>
+
+	<h2 class="Sh2"><a class="an" name="conclusion"><u>CONCLUSION.</u></a></h2>
+	<p>C'est ainsi que se termine ce tutoriel, j'espère qu'il vous aura été utile. N'hésitez pas à faire d'autres figures. <p>
+	<div class="MERCI">
+	<h2>Merci d'avoir suivi ce tutoriel !<h2>
+	</div>
+</div>
+</body>
+</html>
