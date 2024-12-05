@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Game</title>
+  </head>
+  <body>
+	<div class="game_box">
+		<!-- Gestion de l'horloge -->
+	    <div id="clock" style="grid-column: 30; grid-row: 2;"></div> <!-- grid-column et grid-row : permet de changer l'emplacement du timer. -->
+
+		
+
+	    <!-- Chargement de l'attaque. -->
+	    <div class="attack_loading" id="AL1" style="grid-column: 3; grid-row: 2;">
+	        <div class="filler" id="fillerBar1"></div>
+	    </div>
+		
+	    <div class="attack_loading" id="AL2" style="grid-column: 3; grid-row: 3;">
+		    <div class="filler" id="fillerBar2"></div>
+	    </div>
+	    <div class="attack_loading" id="AL3" style="grid-column: 3; grid-row: 4;">
+		    <div class="filler" id="fillerBar3"></div>
+	    </div>
+	    <div class="attack_loading" id="AL4" style="grid-column: 3; grid-row: 5;">
+		    <div class="filler" id="fillerBar4"></div>
+	    </div>
+	    <span id="attack1" style="margin: 10px; font-size: 20px; grid-column: 2; grid-row: 1">1</span>
+	    <span id="attack2" style="margin: 10px; font-size: 20px; grid-column: 2; grid-row: 2">2</span>
+	    <span id="attack3" style="margin: 10px; font-size: 20px; grid-column: 2; grid-row: 3">3</span>
+	    <span id="attack4" style="margin: 10px; font-size: 20px; grid-column: 2; grid-row: 4">4</span> 
+		
+		<!-- Gestion du Joueur-->
+		<div class="players">
+			<p style="grid-area: 1 / 30">Player1:</p>
+			<label id="pseudoJ1" for="player1" style="grid-area: 5 / 30"></label>
+			<p style="grid-area: 1 / 45;">Player2:</p>
+			<label id="pseudoJ2" for="players2" style="grid-area: 5 / 45"></label>
+		</div>
+	
+	    <!-- Gestion du Monde et du Joueur -->
+	    <div id="boss" style="grid-column: 16; grid-row: 9"> </div>
+	    <div id="gameWorld" style="grid-column: 9; grid-row: 19">
+			<!-- Pour la deuxième attaque -->
+			<div id="hidden_cloud" style="top: 100px; left: 200px;"></div>
+			<div id="att_player" style="grid-area: 1 / 1; display: none;"></div>
+			<div id="player" style="grid-area: 1 / 1; z-index: 2">
+				<img src="" alt="player" /> 
+			</div>
+	    </div>
+	</div>
+
+	
+  </body>
+</html>
